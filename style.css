@@ -1,0 +1,130 @@
+.nav-link {
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: white !important;
+  border-bottom: white solid 1px;
+}
+.navbar-nav a {
+  transition: all 0.5s ease !important;
+}
+
+.navbar-nav a:hover {
+  padding: 20px;
+  background: grey;
+}
+
+.carousel-item {
+  height: 500px;
+
+  color: white;
+  background: bl;
+}
+
+.iframe {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+.map-responsive iframe * {
+  display: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+  box-shadow: 20px 20px 45px rgba(0, 0, 0, 5);
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border-left: 1px solid rgbs(0, 0, 0, 0.5);
+  border-end-start-radius: 2em;
+  border-start-end-radius: 2em;
+}
+
+.content {
+  padding: 10px;
+  transition: 0.5s;
+  transform: translateY(200px);
+  opacity: 0;
+  color: white;
+}
+
+.card:hover .content {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.quick-link li a {
+  color: azure;
+}
+
+.quick-link li a:hover {
+  color: green;
+}
+
+.fa {
+  background-color: black;
+  border: 1px;
+  border-color: grey;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  margin: 2px;
+  padding: 5px;
+}
+
+.fa:hover {
+  color: green;
+}
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 50%;
+  position: relative;
+  height: 0;
+}
+
+.overlay-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  background-size: cover;
+  background-position: center;
+}
+
+.travel {
+  position: relative;
+}
+
+.travel span {
+  position: relative;
+  display: inline-block;
+  font-size: 1em;
+  animation: animate 1s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+  40%,
+  100% {
+    transform: translateY(0px);
+  }
+}
