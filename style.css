@@ -1,3 +1,7 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 .nav-link {
   text-transform: uppercase;
 }
@@ -13,6 +17,10 @@
 .navbar-nav a:hover {
   padding: 20px;
   background: grey;
+}
+
+.navbar {
+  background: black;
 }
 
 .carousel-item {
@@ -72,20 +80,6 @@
   color: green;
 }
 
-.fa {
-  background-color: black;
-  border: 1px;
-  border-color: grey;
-  height: 30px;
-  width: 30px;
-  border-radius: 50px;
-  margin: 2px;
-  padding: 5px;
-}
-
-.fa:hover {
-  color: green;
-}
 .map-responsive {
   overflow: hidden;
   padding-bottom: 50%;
@@ -112,7 +106,7 @@
   position: relative;
   display: inline-block;
   font-size: 1em;
-  animation: animate 1s ease-in-out infinite;
+  animation: animate 3s ease-in-out infinite;
   animation-delay: calc(0.1s * var(--i));
 }
 
@@ -126,5 +120,104 @@
   40%,
   100% {
     transform: translateY(0px);
+  }
+}
+
+.footerclass {
+  background: black;
+}
+
+.aboutus {
+  font-size: 8em;
+}
+
+.wrapper .button {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  float: left;
+  margin: 0 5px;
+  background: #fff;
+  border-radius: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+  color: black;
+}
+
+.wrapper .button .icon {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 30px;
+}
+
+.wrapper .button:hover {
+  width: 100px;
+}
+
+.wrapper .button .icon .i {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.wrapper .button .span {
+  font-size: 10px;
+  font-weight: 500px;
+  line-height: 30px;
+  margin-left: 10px;
+}
+
+.ani {
+  position: relative;
+  top: -50px;
+}
+
+.c1 {
+  position: absolute;
+}
+
+.ani .c1:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 0.25px skyblue;
+}
+
+.ani .c1:nth-child(2) {
+  color: skyblue;
+
+  animation: water 3s ease-in-out infinite;
+}
+
+@keyframes water {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      18% 47%,
+      35% 53%,
+      51% 61%,
+      69% 59%,
+      85% 54%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0 59%,
+      19% 65%,
+      40% 66%,
+      58% 55%,
+      74% 48%,
+      88% 47%,
+      100% 49%,
+      100% 100%,
+      0% 100%
+    );
   }
 }
